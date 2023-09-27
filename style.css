@@ -1,3 +1,31 @@
 .hero-home {
   margin-bottom: 6rem;
 }
+
+.hero-description {
+  font-size: 32px;
+}
+
+.hero-home p {
+  font-size: 18px;
+}
+
+.divider {
+  width: 65px;
+  height: 10px;
+  background-color: #2196f3;
+  border-radius: 25px;
+  margin: 18px 0;
+}
+
+.row.about-us {
+  margin-top: 4rem;
+}
+
+.row.about-us h1 {
+  font-size: 64px;
+}
+
+.about-us h1 {
+  color: #2196f3;
+}
