@@ -19,15 +19,71 @@
     <link rel="stylesheet" href="style.css" />
     <title>TGP Agency</title>
   </head>
+
   <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+      <div class="container">
+        <a class="navbar-brand ps-auto" href="#">
+          <img src="/assets/logo.svg" alt="" class="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Our Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Our Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-light text-dark" type="button">
+          LOGIN
+        </button>
+        <button
+          class="btn btn-primary ms-4 px-4 rounded text-white"
+          type="button"
+        >
+          REGISTER
+        </button>
+      </div>
+    </nav>
+    <!-- End Header -->
+
     <!-- Hero Home -->
     <div class="container-lg hero-home mt-5">
       <div class="row d-flex align-items-center">
         <div class="col me-5 pe-5">
-          <h1 class="pb-2">Aenean Facilisis Vitae</h1>
+          <h1 class="pb-2">Building the Future with Code</h1>
           <p class="pb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minus
-            deserunt quo voluptatum beatae, ea ipsum dolore incidunt.
+            We are a team of experts in developing revolutionary software
+            solutions. From concept to launch, we turn ideas into sophisticated
+            digital solutions.
           </p>
           <button class="btn btn-outline-primary text-uppercase px-4">
             Write to us
@@ -41,6 +97,7 @@
         </div>
       </div>
     </div>
+    <!-- End Hero Home -->
 
     <!-- Brand Logo -->
     <div class="container-lg py-5 border-top border-bottom">
@@ -65,6 +122,7 @@
         </div>
       </div>
     </div>
+    <!-- End Brand Logo -->
 
     <!-- About Us -->
     <div class="container-lg my-5 py-5">
@@ -106,6 +164,71 @@
       </div>
     </div>
 
+    <!-- Portofolio Section -->
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-3">
+          <h1 class="pb-1" style="color: #2196f3">Our Portofolio</h1>
+          <ul
+            class="portolio-list"
+            id="portofolio-list"
+            style="list-style: none; padding: 0"
+          ></ul>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem; height: 18rem">
+            <img
+              src="./assets/brand-logo/_Client logo-1.svg"
+              alt=""
+              id="card-1"
+            />
+            <div class="card-body"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem; height: 18rem">
+            <img
+              src="./assets/brand-logo/_Client logo-1.svg"
+              alt=""
+              id="card-2"
+            />
+            <div class="card-body"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem; height: 18rem">
+            <img
+              src="./assets/brand-logo/_Client logo-1.svg"
+              alt=""
+              id="card-3"
+            />
+            <div class="card-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Get Started -->
+    <div class="container bg-primary">
+      <div class="row">
+        <div class="col">
+          <p>Ready to get started ?</p>
+          <p>We're here to answer your questions, write to us today!</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-white text-uppercase px-4 bg-white">
+            Write to us
+            <span class="ms-md-1"
+              ><i class="fa fa-paper-plane" aria-hidden="true"></i
+            ></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Get Started -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -126,5 +249,71 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
+    <script>
+      let list = ["Personal Business", "Start Up", "Corporate"];
+      let data = {
+        "Personal Business": [
+          "https://images.unsplash.com/photo-1589732559737-ac6451549dd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1589732559737-ac6451549dd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1589732559737-ac6451549dd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        ],
+        "Start Up": [
+          "https://images.unsplash.com/photo-1534004760608-6f319a7410ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80",
+          "https://images.unsplash.com/photo-1534004760608-6f319a7410ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80",
+          "https://images.unsplash.com/photo-1534004760608-6f319a7410ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80",
+        ],
+        Corporate: [
+          "https://images.unsplash.com/photo-1562705121-e624542c7b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1562705121-e624542c7b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1562705121-e624542c7b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        ],
+      };
+
+      let portofolioList = document.getElementById("portofolio-list");
+
+      for (let i of list) {
+        var li = document.createElement("li");
+        li.setAttribute("id", i);
+        li.setAttribute("class", "portofolio");
+        let newList = document.createTextNode(i);
+        li.appendChild(newList);
+        portofolioList.appendChild(li);
+      }
+
+      let personalBusiness = document.getElementById("Personal Business");
+      let startUp = document.getElementById("Start Up");
+      let corporate = document.getElementById("Corporate");
+      let card1 = document.getElementById("card-1");
+      let card2 = document.getElementById("card-2");
+      let card3 = document.getElementById("card-3");
+
+      personalBusiness.addEventListener("click", () => {
+        document.getElementById("card-1").src = data["Personal Business"][0];
+        document.getElementById("card-2").src = data["Personal Business"][1];
+        document.getElementById("card-3").src = data["Personal Business"][2];
+        let pb = document.querySelectorAll(".card-body");
+        for (let i of pb) {
+          i.innerHTML = "JOY<br>Web Design";
+        }
+      });
+      startUp.addEventListener("click", () => {
+        document.getElementById("card-1").src = data["Start Up"][0];
+        document.getElementById("card-2").src = data["Start Up"][1];
+        document.getElementById("card-3").src = data["Start Up"][2];
+        let su = document.querySelectorAll(".card-body");
+        for (let i of su) {
+          i.innerHTML = "Tim Hortons<br>Web Development";
+        }
+      });
+      corporate.addEventListener("click", () => {
+        document.getElementById("card-1").src = data["Corporate"][0];
+        document.getElementById("card-2").src = data["Corporate"][1];
+        document.getElementById("card-3").src = data["Corporate"][2];
+        let co = document.querySelectorAll(".card-body");
+        for (let i of co) {
+          i.innerHTML = "IBM<br>Support & Maintenance";
+        }
+      });
+    </script>
   </body>
 </html>
