@@ -650,7 +650,7 @@
     <!-- Comment Section <Todos> -->
     <div class="container px-5 my-5">
       <div class="row mb-5">
-        <div class="col col-6 mx-auto">
+        <div class="col col-xl-6 col-md-12 col-sm-12 col-xs-12 mx-auto">
           <div
             class="row bg-white rounded shadow-sm p-2 add-todo-wrapper align-items-center justify-content-center"
           >
@@ -821,7 +821,12 @@
         const commentInLocal = JSON.parse(localStorage.getItem("comment"));
         for (let i of commentInLocal) {
           const newComment = document.createElement("div");
-          newComment.classList.add("col-6", "mb-1");
+          newComment.classList.add(
+            "col-xl-6",
+            "mb-1",
+            "col-md-12",
+            "col-xs-12"
+          );
           newComment.innerHTML = `
             <div class="card shadow p-3 mb-5 bg-white rounded">
               <div class="card-body">${i}</div>
@@ -838,7 +843,13 @@
 
       const addNewComment = (comment) => {
         const newComment = document.createElement("div");
-        newComment.classList.add("col-6", "mb-1");
+        newComment.classList.add(
+          "col-xl-6",
+          "mb-1",
+          "col-md-12",
+          "col-sm-12",
+          "col-xs-12"
+        );
         newComment.innerHTML = `
             <div class="card shadow p-3 mb-5 bg-white rounded">
               <div class="card-body">${comment}</div>
