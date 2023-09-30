@@ -813,6 +813,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       window.onload = () => {
         if (!localStorage.getItem("comment")) {
@@ -856,11 +857,33 @@
             </div>
         `;
 
-        inputComment.value.trim() !== ""
-          ? commentList.appendChild(newComment)
-          : alert("Comment can't be empty!");
+        addAlert(inputComment.value.trim(), newComment);
+        clearInput();
+      };
 
-        saveItemToLocalStorage(inputComment.value);
+      const addAlert = (inputValue, commentToAdd) => {
+        Swal.fire({
+          title: "Do you want to save the changes?",
+          showDenyButton: true,
+          showCancelButton: true,
+          confirmButtonText: "Save",
+          denyButtonText: `Don't save`,
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            if (inputValue !== "") {
+              Swal.fire("Success Add Item!", "", "success");
+              commentList.appendChild(commentToAdd);
+              saveItemToLocalStorage(inputValue);
+            }
+          } else if (result.isDenied) {
+            Swal.fire("Changes are not saved", "", "info");
+          }
+        });
+      };
+
+      const clearInput = () => {
+        inputComment.value = "";
       };
 
       const saveItemToLocalStorage = (data) => {
